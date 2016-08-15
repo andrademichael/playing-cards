@@ -1,12 +1,23 @@
 $(document).ready(function(){
   var suits = ["Hearts", "Spades", "Diamonds", "Clubs"];
-  var ranks = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"];
+  var ranks = ["Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King"];
   var deck = [];
   suits.forEach(function(suit) {
     ranks.forEach(function(rank) {
       deck.push(rank + " of " + suit);
     });
   });
+  console.log(deck);
+  for
+  (var i = 0; i < deck.length; i++) {
+    $("#deckOutput").append("<li>" + deck[i] + "</li>");
+  };
+});
+
+
+
+
+
 //   var printDeck = deck.map(function(card){
 //     $("#deckOutput").append("<li>" + deck.shift(0) + "</li>");
 //   });
@@ -14,10 +25,7 @@ $(document).ready(function(){
 //   console.log(printDeck);
 // });
 
-for
-(var i = 0; i < deck.length; i++){
-  $("#deckOutput").append("<li>" + deck[i] + "</li>");
-}
+
 // var printDeck = deck.map(function(card){
 //   $("#deckOutput").append("<li>" + deck.shift(0) + "</li>");
 // });
